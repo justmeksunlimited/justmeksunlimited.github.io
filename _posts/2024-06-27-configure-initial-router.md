@@ -23,27 +23,27 @@ In this activity, you will perform basic router configuration tasks. You will se
 
 ## Part 1: Verify the Default Router Configuration
 
-<p style="text-align:center"><img src="../images/configure-initial-router/images/cir_display1.png" /></p>
+<p style="text-align:center"><img src="../images/configure-initial-router/images/cir_display1.png" alt="" /></p>
 
 ### Step 1: Establish a console connection to R1.
 
 a. Choose a **Console** cable from the available connections.
 
-<p ><img src="../images/configure-initial-router/images/cir_display2.png" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display2.png" alt="" /></p>
 
 b. Click **PCA** and select **RS 232**
 
-<p ><img src="../images/configure-initial-router/images/cir_display3.png" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display3.png" alt="" /></p>
 
 c. Click **R1** and select **Console**
 
-<p ><img src="../images/configure-initial-router/images/cir_display4.png" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display4.png" alt="" /></p>
 
 d. Click **PCA** > **Desktop** tab > **Terminal**
 
 e. Click **OK** and press **ENTER**. You are now able to configure **R1**.
 
-<p ><img src="../images/configure-initial-router/images/cir_display5.png" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display5.png" alt="" /></p>
 
 ### Step 2: Enter privileged mode and examine the current configuration
 
@@ -60,9 +60,9 @@ Notice the prompt changed in the configuration to reflect privileged EXEC mode.
 
 b. Enter the **show running-config** config
 
-<p ><img src="../images/configure-initial-router/images/cir_display6.png" /></p>
-<p ><img src="../images/configure-initial-router/images/cir_display7.png" /></p>
-<p ><img src="../images/configure-initial-router/images/cir_display8.png" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display6.png" alt="" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display7.png" alt="" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display8.png" alt="" /></p>
  
 ___
 **Question 1**:  
@@ -352,7 +352,8 @@ Which command displays the contents of the NVRAM?
 
 b. Verify that all the parameters configured are recorded. If not, analyze the output and determine which commands were not executed or were entered incorrectly. You can also click **Check Results** in the instruction window.
 
-<p ><img src="../images/configure-initial-router/images/cir_display9.png" /></p><p ><img src="../images/configure-initial-router/images/cir_display10.png" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display9.png" alt="" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display10.png" alt="" /></p>
 
 ### Step 2: Optional: Save the startup configuration file to flash.
 
@@ -366,7 +367,7 @@ a. Examine the contents of flash using the **show flash** command:
 R1# show flash
 ```
 
-<p ><img src="../images/configure-initial-router/images/cir_display11.png" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display11.png" alt="" /></p>
 
 **Question 14**:  
 How many files are currently stored in flash?
@@ -417,6 +418,6 @@ The router prompts you to store the file in flash using the name in brackets. If
 
 c. Use the **show flash** command to verify the startup configuration file is now stored in flash.
 
-<p ><img src="../images/configure-initial-router/images/cir_display12.png" /></p>
+<p ><img src="../images/configure-initial-router/images/cir_display12.png" alt="" /></p>
 
 Close the configuration window
