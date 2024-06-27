@@ -37,8 +37,7 @@ Your aunt owns a small insurance agency. She recently purchased a Cisco router a
 
 ### Addressing Table
 
-<p ><img src="../images/build-a-switch-and-router-network/images
-/bsr_display1.png" /></p>
+<p ><img src="../images/build-a-switch-and-router-network/images/bsr_display1.png" /></p>
 
 ## Instructions
 
@@ -46,13 +45,11 @@ Your aunt owns a small insurance agency. She recently purchased a Cisco router a
 
 ### Step 1: Connect the devices.
 
-<p ><img src="../images/build-a-switch-and-router-network/images
-/bsr_display2.png" /></p>
+<p ><img src="../images/build-a-switch-and-router-network/images/bsr_display2.png" /></p>
 
 a. First, you will connect the devices using **Copper Straight-Through** cables.
 
-<p ><img src="../images/build-a-switch-and-router-network/images
-/bsr_display3.png" /></p>
+<p ><img src="../images/build-a-switch-and-router-network/images/bsr_display3.png" /></p>
 
 b. Connect **R1 G0/0/1** to any port on **S1**. Connect to the FastEthernet port of the switch
 
@@ -60,8 +57,7 @@ c. Connect to the FastEthernet port of **PCA** to any port on **S1**.
 
 d. Connect to the FastEthernet port of **PCB** to **R1 G0/0/0**.
 
-<p ><img src="../images/build-a-switch-and-router-network/images
-/bsr_display4.png" /></p>
+<p ><img src="../images/build-a-switch-and-router-network/images/bsr_display4.png" /></p>
 
 ### Step 2: Assign addresses to the PCs
 
@@ -75,8 +71,7 @@ The following values are found in the Addressing Table. Enter them in the IP Con
 - **Subnet Mask**: 255.255.255.0
 - **Default Gateway**: 192.168.1.1
 
-<p ><img src="../images/build-a-switch-and-router-network/images
-/bsr_display5.png" /></p>
+<p ><img src="../images/build-a-switch-and-router-network/images/bsr_display5.png" /></p>
 
 b. Configure the IPv4 address, subnet mask, and default gateway settings on **PCB** .
 Click on **PCB**, same way you clicked on **PCA**, to open the IP Configuration of **PCB**.  
@@ -86,8 +81,7 @@ The following values are found in the Addressing Table. Enter them in the IP Con
 - **Subnet Mask**: 255.255.255.0
 - **Default Gateway**: 192.168.0.1
 
-<p ><img src="../images/build-a-switch-and-router-network/images
-/bsr_display6.png" /></p>
+<p ><img src="../images/build-a-switch-and-router-network/images/bsr_display6.png" /></p>
 
 ### Test connectivity between **PCA** and **PCB**.
 
@@ -95,8 +89,7 @@ Ping between **PCA** and **PCB**.
 
 In the **PCA** Command Prompt, enter the **ping 192.168.0.3** command. You can also open the **PCB** Command Prompt, and then enter the **ping 192.168.1.3** command.
 
-<p ><img src="../images/build-a-switch-and-router-network/images
-/bsr_display7.png" /></p>
+<p ><img src="../images/build-a-switch-and-router-network/images/bsr_display7.png" /></p>
 
 You will notice that the pings failed.
 
@@ -210,8 +203,7 @@ Now, let's test connectivity between **PCA** and **PCB** again.
 Ping between **PCA** and **PCB**.  
 In the **PCA** Command Prompt, enter the **ping 192.168.0.3** command. You can also open the **PCB** Command Prompt, and then enter the **ping 192.168.1.3** command.
 
-<p ><img src="../images/build-a-switch-and-router-network/images
-/bsr_display8.png" /></p>
+<p ><img src="../images/build-a-switch-and-router-network/images/bsr_display8.png" /></p>
 
 It worked this time.
 
@@ -362,8 +354,7 @@ C:\> ssh -l SSHuser 192.168.1.1
 
 The password is **cisco**.
 
-<p ><img src="../images/build-a-switch-and-router-network/images
-/bsr_display9.png" /></p>
+<p ><img src="../images/build-a-switch-and-router-network/images/bsr_display9.png" /></p>
 
 You successfully verified that SSH is correctly configured on R1
 
