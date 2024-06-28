@@ -16,6 +16,7 @@ tag:
 ---
 
 > This Cisco Packet Tracer lab is a property of the Cisco Networking Academy, [Skills for all with Cisco](https://skillsforall.com/ "Skills for all with Cisco"). This article seeks to bring solutions by displaying images and providing answers to the questions in the lab for better understanding.
+> {: .prompt-info }
 
 > Click the [Cisco Packet tracer file](https://skillsforall.com/content/ndic/1.0/courses/content/m11/en-US/assets/11.4.4-packet-tracer-tutored-activity---build-a-switch-and-router-network.pksz "Cisco Packet tracer file") to get the lab file to follow up with the solution.
 
