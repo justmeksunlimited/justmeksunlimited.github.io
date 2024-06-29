@@ -3,13 +3,18 @@ title: " Cisco Packet Tracer (CPT) Lab Solutions - Configure Initial Router Sett
 date: 2024-06-27
 categories: ["Cisco Networking Academy", "Cisco Packet Tracer Labs"]
 tag: [cisco, router, router-configuration, ipv4-address, subnet-mask]
+description: Easy steps to configure a router's initial settings using the cisco packet tracer
 ---
 
+## Overview
+
+{: .prompt-info }
+
 > This Cisco Packet Tracer lab is a property of the Cisco Networking Academy, [Skills for all with Cisco](https://skillsforall.com/ "Skills for all with Cisco"). This article seeks to bring solutions by displaying images and providing answers to the questions in the lab for better understanding.
-> {: .prompt-info }
+
+{: .prompt-tip }
 
 > Click the [Cisco Packet tracer file](https://skillsforall.com/content/ndic/1.0/courses/content/m11/en-US/assets/11.2.4-packet-tracer-configure-initial-router-settings.pka "Cisco Packet tracer file") to get the lab file to follow up with the solution.
-> {: .prompt-tip }
 
 ### Objectives
 
@@ -19,56 +24,60 @@ Part 3: Save the Running Configuration File
 
 ### Background
 
-In this activity, you will perform basic router configuration tasks. You will secure access to the CLI and console port using encrypted and plain-text passwords. You will also configure messages for users who are logging into the router. These banners warn unauthorized users that access is prohibited. Finally, you will verify and save your running configuration.
+In this activity, you will perform basic router configuration tasks. You will secure access to the CLI (Command Line Interface) and console port using encrypted and plain-text passwords. You will also configure messages for users who are logging into the router. These banners warn unauthorized users that access is prohibited. Finally, you will verify and save your running configuration.
 
-## Instructions
+### Instructions
 
-## Part 1: Verify the Default Router Configuration
+### Part 1: Verify the Default Router Configuration
 
-<p style="text-align:center"><img src="../images/configure-initial-router/images/cir_display1.png" alt="" /></p>
+![alt text](../assets/img/configure-initial-router/images/cir_display1.png)
 
-### Step 1: Establish a console connection to R1.
+#### Step 1: Establish a console connection to R1.
 
 a. Choose a **Console** cable from the available connections.
 
-<p ><img src="../images/configure-initial-router/images/cir_display2.png" alt="" /></p>
+![alt text](../assets/img/configure-initial-router/images/cir_display2.png)
 
 b. Click **PCA** and select **RS 232**
 
-<p ><img src="../images/configure-initial-router/images/cir_display3.png" alt="" /></p>
+![alt text](../assets/img/configure-initial-router/images/cir_display3.png)
 
 c. Click **R1** and select **Console**
 
-<p ><img src="../images/configure-initial-router/images/cir_display4.png" alt="" /></p>
+![alt text](../assets/img/configure-initial-router/images/cir_display4.png)
 
 d. Click **PCA** > **Desktop** tab > **Terminal**
 
 e. Click **OK** and press **ENTER**. You are now able to configure **R1**.
 
-<p ><img src="../images/configure-initial-router/images/cir_display5.png" alt="" /></p>
+![alt text](../assets/img/configure-initial-router/images/cir_display5.png)
 
-### Step 2: Enter privileged mode and examine the current configuration
+#### Step 2: Enter privileged mode and examine the current configuration
 
 You can access all the router commands from privileged EXEC mode. However, because many of the privileged commands configure operating parameters, privileged access should be password-protected to prevent unauthorized use.
 
 a. Enter privileged EXEC mode by entering the **enable** command
 
-```cli
+```terminal
 Router> enable
 Router#
 ```
 
-Notice the prompt changed in the configuration to reflect privileged EXEC mode.
+{: .prompt-info }
+
+> Notice the prompt changed in the configuration to reflect privileged EXEC mode.
 
 b. Enter the **show running-config** config
 
-<p ><img src="../images/configure-initial-router/images/cir_display6.png" alt="" /></p>
-<p ><img src="../images/configure-initial-router/images/cir_display7.png" alt="" /></p>
-<p ><img src="../images/configure-initial-router/images/cir_display8.png" alt="" /></p>
- 
-___
+![alt text](../assets/img/configure-initial-router/images/cir_display6.png)  
+![alt text](../assets/img/configure-initial-router/images/cir_display7.png)  
+![alt text](../assets/img/configure-initial-router/images/cir_display8.png)
+
+---
+
 **Question 1**:  
-What is the router's hostname?  
+What is the router's hostname?
+
 <details>
     <summary ><strong>Click here for answer</strong></summary>
 
@@ -128,7 +137,7 @@ What is the range of values shown for the vty lines?
 
 c. Display the current contents of NVRAM.
 
-```cli
+```terminal
 Router# show startup-config
 startup-config is not present
 ```
@@ -147,59 +156,60 @@ Why does the router respond with the **startup-config is not present** message?
 
 ---
 
-## Part 2: Configure and Verify the Initial Router Configuration
+### Part 2: Configure and Verify the Initial Router Configuration
 
 To configure parameters on a router, you may be required to move between various configuration modes. Notice how the prompt changes as you navigate through the IOS configuration modes.
 
-### Step 1: Configure the initial settings on R1.
+#### Step 1: Configure the initial settings on R1.
 
-**Note**: The following tasks should be completed when configuring initial settings on a router.
+{: .prompt-tip }
 
-1.  Configure the device name.
+> The following tasks should be completed when configuring initial settings on a router.
 
-    ```cli
-    Router(config)# hostname hostname
+1.  Configure the device name using the name _hostname1_.
+
+    ```terminal
+    Router(config)# hostname hostname1
     ```
 
-2.  Secure privileged EXEC mode.
+2.  Secure privileged EXEC mode using _password1_ as the password.
 
-    ```cli
-    Router(config)# enable secret password
+    ```terminal
+    Router(config)# enable secret password1
     ```
 
 3.  Secure user EXEC mode.
 
-    ```cli
+    ```terminal
     Router(config)# line console 0
-    Router(config-line)# password password
+    Router(config-line)# password password1
     Router(config-line)# login
     ```
 
 4.  Secure remote Telnet / SSH access.
 
-    ```cli
+    ```terminal
     Router(config)# line vty 0 4
-    Router(config-line)# password password
+    Router(config-line)# password password1
     Router(config-line)# login
-    R1(config-line)# transport input ssh telnet
     ```
 
 5.  Secure all passwords in the config file.
 
-    ```cli
+    ```terminal
     Router(config-line)# exit
     Router(config)# service password-encryption
     ```
 
 6.  Provide legal notification.
 
-    ```cli
+    ```terminal
     Router(config)# banner motd delimiter message delimiter
     ```
 
     The legal notification warns users that the device should only be accessed by permitted users. Legal notification as an example is configured as follows :
 
-    ```cli
+    ```terminal
     R1(config)# banner motd #
     Enter TEXT message. End with the character '#'.
     ***********************************************
@@ -210,7 +220,7 @@ To configure parameters on a router, you may be required to move between various
 
 7.  Save the configuration.
 
-    ```cli
+    ```terminal
     Router# copy running-config startup-config
     ```
 
@@ -228,7 +238,7 @@ Use the following passwords:
 
 2.  Console: **letmein**
 
-### Step 2: Verify the initial settings on R1.
+#### Step 2: Verify the initial settings on R1.
 
 a. Verify the initial settings by viewing the configuration for R1.
 
@@ -248,7 +258,7 @@ What command do you use?
 
 b. Exit the current console session until you see the following message:
 
-```cli
+```terminal
 R1 con0 is now available
 
 Press RETURN to get started.
@@ -256,7 +266,7 @@ Press RETURN to get started.
 
 c. Press **ENTER**; you should see the following message:
 
-```cli
+```terminal
 Unauthorized access is strictly prohibited.
 
 User Access Verification
@@ -306,9 +316,9 @@ If you configure any more passwords on the router, are they displayed in the con
 
 ---
 
-## Part 3: Save the Running Configuration File
+### Part 3: Save the Running Configuration File
 
-### Step 1: Save the configuration file to NVRAM.
+#### Step 1: Save the configuration file to NVRAM.
 
 Open a configuration window
 
@@ -354,10 +364,10 @@ Which command displays the contents of the NVRAM?
 
 b. Verify that all the parameters configured are recorded. If not, analyze the output and determine which commands were not executed or were entered incorrectly. You can also click **Check Results** in the instruction window.
 
-<p ><img src="../images/configure-initial-router/images/cir_display9.png" alt="" /></p>
-<p ><img src="../images/configure-initial-router/images/cir_display10.png" alt="" /></p>
+![alt text](../assets/img/configure-initial-router/images/cir_display9.png){: width="421" height="427" }  
+![alt text](../assets/img/configure-initial-router/images/cir_display10.png){: width="421" height="427" }
 
-### Step 2: Optional: Save the startup configuration file to flash.
+#### Step 2: Optional: Save the startup configuration file to flash.
 
 Although you will be learning more about managing the flash storage in a router in later chapters, you may be interested to know that, as an added backup procedure, you can save your startup configuration file to flash. By default, the router still loads the startup configuration from NVRAM, but if NVRAM becomes corrupt, you can restore the startup configuration by copying it over from flash.
 
@@ -365,11 +375,11 @@ Complete the following steps to save the startup configuration to flash.
 
 a. Examine the contents of flash using the **show flash** command:
 
-```cli
+```terminal
 R1# show flash
 ```
 
-<p ><img src="../images/configure-initial-router/images/cir_display11.png" alt="" /></p>
+![alt text](../assets/img/configure-initial-router/images/cir_display11.png)
 
 **Question 14**:  
 How many files are currently stored in flash?
@@ -410,7 +420,7 @@ Why do you think this file is the IOS image?
 **Question 17**:  
 b. Save the startup configuration file to flash using the following commands:
 
-```cli
+```terminal
 R1# copy startup-config flash
 
 Destination filename [startup-config]
@@ -420,6 +430,6 @@ The router prompts you to store the file in flash using the name in brackets. If
 
 c. Use the **show flash** command to verify the startup configuration file is now stored in flash.
 
-<p ><img src="../images/configure-initial-router/images/cir_display12.png" alt="" /></p>
+![alt text](../assets/img/configure-initial-router/images/cir_display12.png)
 
 Close the configuration window
