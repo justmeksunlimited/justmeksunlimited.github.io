@@ -2,7 +2,7 @@
 title: " Cisco Packet Tracer (CPT) Lab Solutions - Connect to a Web Server."
 date: 2024-06-29 +0100
 categories: ["Cisco Networking Academy", "Cisco Packet Tracer Labs"]
-tag: [cisco, router, dhcp, web, server]
+tag: [cisco, router, web, server]
 description: Easy way to connect your device to a web server.
 ---
 
@@ -21,10 +21,9 @@ description: Easy way to connect your device to a web server.
 
 Observe how packets are sent across the Internet using IP addresses.
 
-## Part 1: Verify connectivity to the web server
+### Part 1: Verify connectivity to the web server
 
-<p style="text-align:center"><img src="images
-\cws_display1.png" /></p>
+![alt text](../assets/img/connect-to-a-web-server/cws_display1.png)
 
 a. Open the source host command prompt window. Select **PC0**.
 
@@ -32,7 +31,7 @@ b. Select the Desktop Tab > Command Prompt.
 
 c. Verify connectivity to the web server. At the command prompt, ping the IP address of the web server by entering **ping 172.33.100.50**.
 
-```
+```terminal
 PC> ping 172.33.100.50
 
 
@@ -58,21 +57,34 @@ Approximate round trip times in milli-seconds:
 Minimum = 0ms, Maximum = 0ms, Average = 0ms
 ```
 
-<p style="text-align:center"><img src="images
-\cws_display2.png" /></p>
+![alt text](../assets/img/connect-to-a-web-server/cws_display2.png){: width="400" height="427" }
 
-A reply verifies connectivity from the client to the destination web server. The reply may time out initially while devices load and ARP is performed.
+{: .prompt-info }
+
+> A reply verifies connectivity from the client to the destination web server. The reply may time out initially while devices load and ARP is performed.
 
 d. Close the command prompt window only, by selecting the x within the command prompt window. Be sure to leave the PC0 configuration window open.
 
-## Part 2: Connect to the Web Server via the web client
+### Part 2: Connect to the Web Server via the web client
 
 a. In the Desktop tab on PC0, select **Web Browser**.
 
 b. Enter **172.33.100.50** into the URL and click **Go**. The web client will connect to the web server via the IP address, and open the web page.
 
-<p style="text-align:center"><img src="images
-\cws_display3.png" /></p>
+![alt text](../assets/img/connect-to-a-web-server/cws_display3.png){: width="400" height="427" }
 
-Question:
+---
+
+**Question 1**:  
 What messages did you see after the web page has finished loading?
+
+<details>
+    <summary ><strong>Click here for answer</strong></summary>
+
+    Welcome to the Learn IP Web Site.
+
+    You were able to reach this website because you had the IP address of the web server. The connecting PC also had a web client running on the device.
+
+</details>
+
+---
