@@ -17,7 +17,7 @@ Prior to this project, you have learned the basics of computer networking, the c
 
 ### Case Study
 
-Design a simple office network in Cisco packet tracer to connect **HUMAN RESOURCE (HR)** and **FINANCE (FIN)** departments through the following;
+Design a simple office network in Cisco packet tracer to connect **HUMAN RESOURCE (HR)** and **FINANCE (FIN)** departments through the following;  
 a. The configurations of the host devices should be separately done statically and dynamically(using DHCP).
 
 b. Each department should contain at least four(4) PCs and a printer
@@ -62,7 +62,7 @@ c. Rename the devices according to your preferred specifications by clicking on 
 
 > For the same network devices, use the **Copper Straight-Through** cable, while, for different network devices, use the **Copper Cross-Over** cable, connecting to the ethernet ports of each device.
 >
-> To configure the router or switch from your Pc, you connect using the **Console** cable, connecting to the **RS** port the of the PC and **Console** port of the the router or switch.
+> To configure the router or switch from your PC, you connect using the **Console** cable, connecting to the **RS** port the of the PC and **Console** port of the the router or switch.
 >
 > However, you can preferably use the "Lightening bolt" icon of the cables to automatically connect using the appropriate cable.
 
@@ -460,6 +460,8 @@ We will use;
 
 > Click to to download and view the
 > <a href="/assets/cpt-file/simple-office-networking-project/simple-office-networking-project-static-configuration.pkt" title="Download" download>Dynamic configuration </a> cisco packet tracer project file.
+>
+> The ip addresses of each PCs may vary in your project from the ones on this article but will be within the network Id. This is due to the DHCP request time of each PCs
 
 ### Part 5: Test connectivity between devices.
 
