@@ -79,7 +79,9 @@ _Observe;_
 >
 > - [40 - 32 = 8], gives a positive value, 1 is indicated.
 >
-> - [8 - 16 = -8], gives a negative value, 0 is indicated. -[8 - 8 = 0], gives a positive value, 1 is indicated.
+> - [8 - 16 = -8], gives a negative value, 0 is indicated.
+>
+> - [8 - 8 = 0], gives a positive value, 1 is indicated.
 >
 > - The rest gives negative values, so 0 is indicated for them.
 

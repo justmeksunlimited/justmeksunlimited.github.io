@@ -127,7 +127,7 @@ b. Switch from **Static** to **DHCP** by clicking on the **DHCP** option. This a
 
 {: .prompt-tip}
 
-> Observe and note the IP addresses of the PCs and note also that the addresses are not part of the onces excluded from the dhcp service pool.
+> Observe and note the IP addresses of the PCs and note also that the addresses are not part of the ones excluded from the dhcp service pool.
 >
 > Also, the ip addresses of each PCs may vary in your project from the ones on this article but will be within the network **192.168.16.0 /24**. This is due to the DHCP request time of each PCs.
 
@@ -145,7 +145,7 @@ b. Ping **PC1** using its IP address.
 
 ![alt text](../assets/img/layer3-switch-as-a-dhcp-server/layer3switch-dhcp_display5.png){: width="400" height="427" }
 
-c. Try pinging **PC0** from **PC2** or using **PC0** or **PC1** to ping the other PCs or even the Multilayer Switch using its the IP address assigned to it.
+c. Try pinging **PC0** from **PC2** or using **PC0** or **PC1** to ping the other PCs or even the Multilayer Switch using the IP address assigned to it.
 
 {: .prompt-tip}
 

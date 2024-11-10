@@ -118,7 +118,7 @@ b. Ping **PC2** using its IP address.
 
 ![alt text](/assets/img/router-as-a-dhcp-server/routerdhcp_display4.png){: width="400" height="427" }
 
-c. Try pinging **PC1** from **PC3** or using **PC1** or **PC2** to ping the other PCs or even Router using its the IP address assigned to it which is also the default gateway of the PCs.
+c. Try pinging **PC1** from **PC3** or using **PC1** or **PC2** to ping the other PCs or even Router using the IP address assigned to it which is also the default gateway of the PCs.
 
 {: .prompt-tip}
 
