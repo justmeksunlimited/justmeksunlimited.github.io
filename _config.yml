@@ -14,12 +14,12 @@ timezone: Africa/Lagos
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: JMU Network & Security Doc # the main title
+title: JMU Cybersecurity Documentation # the main title
 
-tagline: A Network and Security Blog # it will display as the sub-title
+tagline: A Network and Security Doc # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A documentation site for network and security enthusiasts.
+  A documentation site for network and cybersecuritysecurity enthusiasts.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
