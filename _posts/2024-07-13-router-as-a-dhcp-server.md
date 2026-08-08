@@ -71,7 +71,7 @@ Router(dhcp-config)#exit
 
 > The dns server address 192.168.20.1(not particularly correct), is used to show that the dns server should be configured too.
 
-### Step 4(Optional): Exclude Specific IP Addresses from the DHCP service.
+### Step 4(Optional): Exclude Specific IP Addresses from the DHCP service
 
 You will like to exclude certain IP addresses, so as to assign them statically to particular devices of choice or importance such as the printer.
 
@@ -79,7 +79,7 @@ You will like to exclude certain IP addresses, so as to assign them statically t
 Router(config)#ip dhcp excluded-address 192.168.20.1 192.168.20.10
 ```
 
-### Step 5: Save the configurations.
+### Step 5: Save the configurations
 
 ```terminal
 Router(config)#do write

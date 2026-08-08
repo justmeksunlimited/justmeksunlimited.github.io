@@ -47,7 +47,7 @@ The first layered model for internetwork communications was created in the early
 |-----|-------|
 |**Application**|Represents data to the user, plus encoding and dialog control|
 |**Transport**|Supports communication between various devices across diverse networks.|
-|**Internet**|Deternines the best path through the network|
+|**Internet**|Determines the best path through the network|
 |**Network Access**|Controls hardware devices and media that make up the network|
 |||
 
@@ -73,13 +73,13 @@ The most widely known internetwork reference model was created by the Open Syste
 
 The key similarities are in the transport and network layers; however, the two models differ in how they relate to the layers above and below each layer.
 
-Note the following;
+Note the following:
 
-OSI layer 3, the network layer, maps directly to the TCP/IP are used to describe protocols that address and route messages through and internetwork.
+OSI layer 3, the network layer, maps directly to the TCP/IP are used to describe protocols that address and route messages through the internetwork.
 
 OSI layer 4, the transport layer, maps directly to the TCP/IP transport layer. This layer describes general services and functions that provide ordered and reliable delivery of data between source and destination hosts.
 
-The TCP/IP application layer includes several protocols that provide specific functionality to a variety of end user applicationss. The OSI model layers 5,6 and 7 are used a references for application software developers and vendors to produce applications that operate on networks.
+The TCP/IP application layer includes several protocols that provide specific functionality to a variety of end user applicationss. The OSI model layers 5,6 and 7 are used as references for application software developers and vendors to produce applications that operate on networks.
 
 Both the TCP/IP and OSI models are commonly used when referring to protocols at various layers. Because the OSI models separate the data-link layer from the physical layer, it is commonly used when referring to these lower layers.
 
@@ -90,7 +90,7 @@ Both the TCP/IP and OSI models are commonly used when referring to protocols at 
 This is where the encapsulated data unit is first transformed into raw bits and then converted into signals during transmission through network media to its destination.
 The media maybe copper wire, fibre-optic cable or electromagnetic waves through the air.
 
-The signals maybe, either through
+The signals maybe, either through:
 
 1. Electrical signal which is a series of pulses of electricity on a copper wire or LAN cable.
 2. Optical Signals: which is pulses of light on fibre-optic cable.
@@ -102,9 +102,9 @@ Also, note the computer data exists in form of bits(binary digits i.e 1s and 0s)
 
 The common network cables are;
 
->- twisted pair cable
->- Coaxial cable
->- Fibre-optic cable
+- twisted pair cable
+- Coaxial cable
+- Fibre-optic cable
 
 {: .prompt-info }
 
@@ -118,7 +118,7 @@ The Layer 2 technology uses wired or wireless network technology.
 
 ##### Wired Network Technology
 
-Ethernet protocol is the most commonly implement wired protocol because it uses a suite of protocols that allow network devices to communicate over a wired LAN connection. And ethernet LAN can connect devices using any of the following types of cable which are, the twisted-pair cable, coaxial cable fibre-optic cable.
+Ethernet protocol is the most commonly implemented wired protocol because it uses a suite of protocols that allow network devices to communicate over a wired LAN connection. And ethernet LAN can connect devices using any of the following types of cable which are, the twisted-pair cable, coaxial cable fibre-optic cable.
 
 Devices access the  ethernet LAN using an Etherenet Network Interface Card (NIC). Each Ethernet NIC has a unique address permanently embedded on the card known as a Media Access Control (MAC) address. The MAC address for both the source and destination are fields in an Ethernet Frame.
 
@@ -144,7 +144,7 @@ Ensures delivery within the same local network.
 
 #### Layer 3: Network
 
-In this layer, the goal is an end to end delivery, that is from the source to the destination. Uses an addressing scheme called the Interne Protocol (IP) addresses during this delivery.
+In this layer, the goal is an end to end delivery, that is from the source to the destination. Uses an addressing scheme called the Internet Protocol (IP) addresses during this delivery.
 
 It handles routing between different networks.
 
@@ -185,7 +185,7 @@ Clients select random port for each session connection.
 
 #### Layer 5: Session
 
-In this layer, it manages sessions (Connections) between end-user application processes of devices.
+In this layer, it manages sessions (connections) between end-user application processes of devices.
 
 It handles setup, management and termination of communication.
 
