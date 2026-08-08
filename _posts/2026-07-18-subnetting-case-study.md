@@ -198,8 +198,9 @@ Using the PC of any of the subnet, ping the TechCorp Router or any other PCs to 
 
 {: .prompt-tip}
 
-> Click the <a href="/assets/cpt-file/subnetting-project/transcorp-network-project.pkt" title="Download" download>Transcorp Network Project </a> to download the packet tracer file to view the project.
+> Click the <a href="/assets/cpt-file/subnetting-project/techcorp-network-project.pkt-network-project.pkt" title="Download" download>TechCorp Network Project </a> to download the packet tracer file to view the project.
 
 ## Conclusion
 
- VLSM is not just about hitting host counts, it is about making a network that reflects the organization it serves and still has room to grow. Sizing largest to smallest and always choosing the tighest fitting block keeps the address spaces efficient without leaving any department boxed in.
+ TechCorp successfully divided its network into smaller, more manageable subnets, improving both network performance and security by subnetting the **192.168.10.0/24** network. Each department now has its own subnet with enough room for growth, and the overall network is more organized. This subnetting design (VLSM) ensures that departments with more devices (like IT and Sales) get larger subnets, while departments with fewer devices use smaller subnets, optimizing the use of available IP addresses.  
+ Therefore, VLSM is not just about hitting host counts, it is about making a network that reflects the organization it serves and still has room to grow. Sizing largest to smallest and always choosing the tighest fitting block keeps the address spaces efficient without leaving any department boxed in.
