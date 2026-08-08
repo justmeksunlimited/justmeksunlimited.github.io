@@ -198,7 +198,7 @@ Using the PC of any of the subnet, ping the TechCorp Router or any other PCs to 
 
 {: .prompt-tip}
 
-> Click the <a href="/assets/cpt-file/subnetting-project/techcorp-network-project.pkt-network-project.pkt" title="Download" download>TechCorp Network Project </a> to download the packet tracer file to view the project.
+> Click the <a href="/assets/cpt-file/subnetting-project/techcorp-network-project.pkt" title="Download" download>TechCorp Network Project </a> to download the packet tracer file to view the project.
 
 ## Conclusion
 
